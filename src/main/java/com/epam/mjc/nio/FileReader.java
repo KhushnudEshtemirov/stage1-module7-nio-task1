@@ -34,9 +34,7 @@ public class FileReader {
             input.close();
             return profile;
         } catch (IOException e) {
-            System.out.println("Error: " + e);
+            throw new RuntimeException(e);
         }
-
-        return new Profile();
     }
 }
