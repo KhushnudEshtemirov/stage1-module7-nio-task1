@@ -34,7 +34,7 @@ public class FileReader {
             input.close();
             return profile;
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new CustomExeption(e);
         }
     }
 }
