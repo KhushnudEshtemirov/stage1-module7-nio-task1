@@ -7,8 +7,12 @@ import java.io.InputStream;
 
 
 public class FileReader {
+    public static void main (String[] args) {
+        File file = new File("Profile.txt");
+        getDataFromFile(file);
+    }
 
-    public Profile getDataFromFile(File file) {
+    public static Profile getDataFromFile(File file) {
         Profile profile = new Profile();
         try {
             InputStream input = new FileInputStream(file);
